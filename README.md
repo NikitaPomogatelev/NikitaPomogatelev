@@ -2,4 +2,4 @@
 Мои работы
 
 
-[SoundBurner](https://nikitapomogatelev.github.io/soundburner/ "Верстка сайта с применением FlexBox + Адаптивность")
+[#1_SoundBurner](https://nikitapomogatelev.github.io/soundburner/ "Верстка сайта с применением FlexBox + Адаптивность") - верстка сайта с применением технологии FlexBox + Адаптивность
