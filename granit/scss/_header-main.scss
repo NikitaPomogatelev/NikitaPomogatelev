@@ -1,0 +1,91 @@
+/* main-slider */
+.owl-carousel {
+  // 1 section
+  .header-main-1 {
+    background: #3f3f3f url("../img/dark-bg.jpg") center center no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    min-height: 550px;
+    padding-top: 170px;
+    color: #fff;
+
+    .main-tittle {
+      @include bold;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .main-subtittle {
+      @include light;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .main-btn {
+      @include btn;
+      display: inline-block;
+      margin-top: 65px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .main-article {
+      display: inline-block;
+      @include medium;
+      font-size: 12px;
+      margin-left: 30px;
+      margin-right: 13px;
+    }
+
+    .main-link {
+      @include bold;
+      font-size: 12px;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+  // section 2
+  .header-main-2 {
+    background: #3f3f3f url("../img/dark-bg.jpg") center center no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    min-height: 550px;
+    padding-top: 170px;
+    color: #fff;
+
+    .main-tittle {
+      @include bold;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .main-subtittle {
+      @include light;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .main-btn {
+      @include btn;
+      display: inline-block;
+      margin-top: 65px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .main-article {
+      display: inline-block;
+      @include medium;
+      font-size: 12px;
+      margin-left: 30px;
+      margin-right: 13px;
+    }
+
+    .main-link {
+      @include bold;
+      font-size: 12px;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}
