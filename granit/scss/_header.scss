@@ -82,13 +82,16 @@ header {
         padding: 25px 40px;
         width: 20%;
         text-align: center;
+        cursor: pointer;
+        transition: all 0.6s ease;
+        &:hover {
+          background: #E5BB00;
+        }
         a {
           color: #000;
           display: block;
         }
-        &:hover {
-          background: red;
-        }
+        
       }
     }
   }
