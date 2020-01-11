@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Friends Family</title>
   </head>
   <body>
-    <div class="nav-menu">
+    <nav class="nav-menu">
       <div class="nav-menu__logo">
         <img src="img/logo/logo.svg" alt="">
         <div class="nav-menu__logo-text">
@@ -24,7 +25,7 @@
         <a href="#" class="nav-menu-list__link">Контакты</a>
        <span class="nav-menu-list__burger"> <img src="img/logo/burger.svg"></span>
       </div>
-    </div>
+    </nav>
     
     <div class="wrapper">
       
@@ -45,14 +46,16 @@
                 на VK страницу и мы с вами свяжемся.</p>
                 <button>Оставить заявку</button>
           </div>
-            <div class="header-block-image">
-              <img src="img/header-main/image-1.jpg" alt="">
+            <div class="header-block-image_1">
+              
           </div>
         </div>
 
         <div class="header-block">
           
-            <img src="img/header-main/image-2.jpg" alt="">
+          <div class="header-block-image_2">
+              
+          </div>
         
           <div class="header-block-content">
             <span>Только для Вас и Вашей дочки!</span>
@@ -64,6 +67,7 @@
                 для обсуждения заказа. </p>
                 <button>Оставить заявку</button>
           </div>
+          
           
         </div>
 
@@ -80,8 +84,11 @@
               примерную смету через 15 минут!</p>
               <button>Оставить заявку</button>
           </div>
+          <div class="header-block-image_3">
+              
+          </div>
           
-            <img src="img/header-main/image-3.jpg" alt="">
+            
           
           
         </div>
@@ -179,7 +186,28 @@
         <h2 class="navigation-title nav-item">Осуществляем доставку по всему миру!</h2>
         <div class="navigation-map nav-item"></div>
       </section>
-      <section class="feedback"></section>
+      <section class="feedback">
+        <div class="feedback-text">
+          <h2 class="feedback-text__title">Изготовим по вашим эскизам <br> или эскизам других дизайнеров! </h2>
+          <p class="feedback-text__subtitle">Просто оставьте нам фотографию или эскиз изделия и мы перезвоним вам и скажем примерную цену и срок изготовления.</p>
+          <form action="#" method="post" class="feedback-text__form">
+          <input type="text" placeholder="Ваше имя">
+          <input type="text" placeholder="Ваш телефон">
+          <label for="file" class="feedback-text__form-btn" for="file">
+            <img src="img/icon-uploud.png" alt="">
+            Прикрепить файл</label>
+          <input type="file">
+          <input class="feedback-text__form-button" type="submit" value="Отправить заявку">
+          </form>
+          
+          
+          
+          
+        </div>
+        <div class="feedback-image">
+          
+        </div>
+      </section>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
