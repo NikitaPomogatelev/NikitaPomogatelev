@@ -11,3 +11,5 @@
 [#4 sitediplom](https://nikitapomogatelev.github.io/sitediplom/public/index.html "Дипломный проект") - Врестка дипломного проекта с применением технологии FlexBox, JavaScript и библиотеки jQuery. Адаптивный (за исключением sidebar)
 
 [#5 granit](https://nikitapomogatelev.github.io/granit/ "Верстка одностраничного сайта") - Верстка адаптивного одностраничного сайта, с применением технологий FlexBox, Bootstrap 4 Grid, Owl-carousel-2
+
+[#6 FriendsFamily](https://nikitapomogatelev.github.io/FriendsFamily/ "Верстка одностраничного сайта") - Верстка  одностраничного сайта (Ателье одежды), с применением технологии CSS Grid, Owl-carousel-2 (Не адаптивен для мобильных устройств)
