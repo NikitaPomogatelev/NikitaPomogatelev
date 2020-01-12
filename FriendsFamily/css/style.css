@@ -125,6 +125,10 @@ body .wrapper {
           transform: translate(-50%, 0%);
 }
 
+body .owl-carousel {
+  position: relative;
+}
+
 body .owl-carousel .header-block {
   display: -ms-grid;
   display: grid;
@@ -193,6 +197,19 @@ body .owl-carousel .header-block-content button {
 
 body .owl-carousel .header-block-content:nth-child(2) {
   text-align: end;
+}
+
+body .owl-prev {
+  display: none;
+}
+
+body .owl-next {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  width: 50px;
+  height: 50px;
+  background: #red;
 }
 
 body .chart {
@@ -339,6 +356,18 @@ body .feedback-text {
       align-self: center;
 }
 
+body .feedback-text__label {
+  display: block;
+  padding: 25px 5px;
+  width: 195px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  cursor: pointer;
+}
+
+body .feedback-text__label img {
+  margin-right: 10px;
+}
+
 body .feedback-text__subtitle {
   font-family: 'Proxima Nova Light', sans-serif;
   font-size: 16px;
@@ -360,17 +389,11 @@ body .feedback-text__form input[type='text'] {
 
 body .feedback-text__form input[type='file'] {
   opacity: 1;
-  display: block;
+  display: none;
   width: 195px;
   padding: 15px 5px;
   font-family: 'Proxima Nova Light', sans-serif;
   font-size: 16px;
-}
-
-body .feedback-text__form-btn {
-  padding: 25px 5px;
-  width: 195px;
-  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 body .feedback-text__form-button {
