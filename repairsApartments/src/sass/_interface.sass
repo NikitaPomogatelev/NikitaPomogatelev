@@ -5,6 +5,7 @@ body
     background: #fff
     +reg
 
+
 img
     max-width: 100% 
 
@@ -46,6 +47,8 @@ a
     &-title
         font-size: 24px
         +bold
+        text-align: center
+        max-width: 500px
     &-subtitle
         font-size: 16px
         display: block
@@ -56,5 +59,31 @@ a
     font-size: 15px
     border-radius: 10px
     +reg
+
+//  Кнопка вверх
+.button-up
+    position: fixed
+    right: 10%
+    bottom: 10%
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    padding: 13px
+    background: darken($main-color, 5%)
+    cursor: pointer
+    transition: background 0.6s ease
+    display: none
+    z-index: 200
+
+.button-up:hover, .button-up:focus
+    background: darken($main-color, 3%)
+
+.arrows
+    &__left, &__right
+        background: transparent
+        &:hover
+            cursor: pointer
+    
+        
 
 

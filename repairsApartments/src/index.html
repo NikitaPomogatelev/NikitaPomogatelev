@@ -6,6 +6,7 @@
     <title>Ремонт Квартир</title>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
                         
                     </div>
                     <!-- /.navbar__contacts -->
-                    <button class="navbar__button button">Перезвоните мне</button>
+                    <button class="navbar__button button" id="button">Перезвоните мне</button>
                 </div>
                 <!-- /.navbar__info -->
             </div>
@@ -85,6 +86,13 @@
                         <input type="text" class="input offer__input" placeholder="Ваше имя">
                         <input type="tel" class="input offer__input" placeholder="Ваш телефон">
                         <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+                        <div class="offer-info">
+                            <span class="offer__call">Наш менеджер перезвонит Вам в течение 60 секунд</span>
+                            <span class="offer__phone">или перезвоните нам сами
+                                <a class="offer__link" href="tel:+7 (495) 42-251-31">+7 (495) 42-251-31</a>
+                            </span>
+                        </div>
+                        <!-- /.offer-info -->
                     </form>
                     <!-- /.form offer__block -->
                 </div>
@@ -93,6 +101,153 @@
             <!-- /.container -->
         </section>
         <!-- /.offer -->
+
+        <section class="section portfolio">
+            <div class="container">
+                <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2>
+
+                <div class="slider owl-carousel">
+                    <div class="slider__item"><img src="img/portfolio/slider-1.jpg" alt="" class="slider__image"></div>
+                    <div class="slider__item"><img src="img/portfolio/slider-2.jpg" alt="" class="slider__image"></div>
+                    <div class="slider__item"><img src="img/portfolio/slider-3.jpg" alt="" class="slider__image"></div>
+                    <div class="slider__item"><img src="img/portfolio/slider-1.jpg" alt="" class="slider__image"></div>
+                    <div class="slider__item"><img src="img/portfolio/slider-2.jpg" alt="" class="slider__image"></div>
+                    <div class="slider__item"><img src="img/portfolio/slider-3.jpg" alt="" class="slider__image"></div>
+
+                   
+                </div>
+                <!-- <div class="arrows">
+                    <div class="arrows__left">
+                        <img src="img/portfolio/left-arrow.png" alt="">    
+                    </div>
+                    <div class="arrows__right">
+                        <img src="img/portfolio/right-arrow.png" alt="">   
+                    </div>
+                </div> -->
+            </div>
+           
+        </section>
+        <!-- /.section portfolio -->
+
+        <section class="section price">
+            <div class="container">
+                <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+                <!-- /.section-title -->
+                <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+                <!-- /.section-subtitle -->
+
+            <div class="cards price__card">
+                <div class="card">
+                    <div class="card__image">
+                        <img class="card__picture" src="img/price/bathroom.jpg" alt="Ванная и с/у">
+                    </div>
+                    <!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                        <!-- /.card__title -->
+                        <a href="" class="card__link">Узнать цены</a>
+                        <!-- /.card__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img class="card__picture" src="img/price/living.jpg" alt="Комнаты и квартиры">
+                    </div>
+                    <!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт комнат и квартир</h4>
+                        <!-- /.card__title -->
+                        <a href="" class="card__link">Узнать цены</a>
+                        <!-- /.card__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img class="card__picture" src="img/price/office.jpg" alt="Оффисные помещения">
+                    </div>
+                    <!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Отделка офисных помещений </h4>
+                        <!-- /.card__title -->
+                        <a href="" class="card__link">Узнать цены</a>
+                        <!-- /.card__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img class="card__picture" src="img/price/buildings.jpg" alt="Новостройки">
+                    </div>
+                    <!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт в новостройках</h4>
+                        <!-- /.card__title -->
+                        <a href="" class="card__link">Узнать цены</a>
+                        <!-- /.card__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img class="card__picture" src="img/price/kitchen.jpg" alt="Кухня">
+                    </div>
+                    <!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт кухонь</h4>
+                        <!-- /.card__title -->
+                        <a href="" class="card__link">Узнать цены</a>
+                        <!-- /.card__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img class="card__picture" src="img/price/houses.jpg" alt="Коттеджи">
+                    </div>
+                    <!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                        <!-- /.card__title -->
+                        <a href="" class="card__link">Узнать цены</a>
+                        <!-- /.card__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.cards -->            
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section price -->
     </main>
-</body>
+
+        <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <div class="modal-overlay" id="overlay"></div>
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close">&times;</button>
+            <h4>Всплывающее окно</h4>
+        </div>
+    </div>
+
+
+     <!-- Кнопка вверх -->
+     <div class="button-up">
+         <img src="img/arrow-up.png">
+     </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
 </html>
