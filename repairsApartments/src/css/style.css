@@ -107,8 +107,8 @@ a {
   position: fixed;
   right: 10%;
   bottom: 10%;
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   padding: 13px;
   background: #e6bd00;
@@ -533,6 +533,128 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.steps__title {
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.steps__subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.steps-block__item {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  position: relative;
+}
+
+.steps-block__item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  width: 72px;
+  height: 25px;
+  background: url("../img/steps/step-arrow.png") no-repeat;
+}
+
+.steps-block__item:last-child::after {
+  display: none;
+}
+
+.steps-block__picture {
+  width: 35px;
+  height: 35px;
+}
+
+.steps-block__image {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.steps-block__text {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  width: 155px;
+}
+
+@media (max-width: 1200px) {
+  .steps-block__item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .steps-block__item::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .steps-block__item {
+    margin-bottom: 30px;
+  }
+}
+
+.prompt {
+  background: #ffc000;
+}
+
+.prompt__info {
+  font-size: 32px;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+  line-height: 50px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .prompt__info {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 268px;
+    width: 98%;
+    margin: auto;
   }
 }
 

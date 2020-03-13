@@ -1,5 +1,7 @@
 $(function(){
 
+    new WOW().init();
+
     // Модальное окно
 $('#button').on('click', function(){
     $('#modal').addClass('modal_active');
