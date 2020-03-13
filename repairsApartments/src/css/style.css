@@ -658,6 +658,109 @@ a {
   }
 }
 
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__item {
+  max-width: 370px;
+  width: 98%;
+  background: url("../img/features/feature-1.jpg") center no-repeat;
+  min-height: 410px;
+  background-size: cover;
+}
+
+.features__item:nth-child(2) {
+  background: url("../img/features/feature-2.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.features__item:nth-child(3) {
+  background: url("../img/features/feature-3.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.features__text {
+  text-align: left;
+  max-width: 277px;
+  margin-left: 25px;
+  margin-top: 27px;
+  font-size: 16px;
+}
+
+.features__title {
+  margin: auto;
+  padding: 100px 0;
+  max-width: 550px;
+}
+
+.guarantee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.guarantee__image {
+  margin-bottom: 30px;
+}
+
+.guarantee__item {
+  width: 25%;
+}
+
+.guarantee__title {
+  width: 70px;
+}
+
+@media (max-width: 768px) {
+  .features-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features__item {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .guarantee {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guarantee__item {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .features__item {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    padding-right: 10px;
+  }
+  .features__item:last-child {
+    margin-right: 0;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
