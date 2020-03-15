@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=39fcde5b-2d8a-464e-90c5-2741e52dca6c&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -413,6 +415,55 @@
         <!-- /.section brif -->
     </main>
 
+    <footer class="footer">
+        <div class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abc1f623c56376cb772aa9d18ba9b47f3e1fb5c9b964699975ae74b0a5e193e8e&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">Приезжайте к нам в гости!
+                        Проконсультируем Вас по всем вопросам ремонта</h3>
+
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/map.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">
+                                г. Москва <br>
+                                <strong>
+                                    ул. Ленинга, д. 10,
+                                    корпус 2, оф. 308
+                                </strong>
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/clock.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">
+                                Режим работы: <br>
+                                <strong>с 9:00 до 18:00</strong>
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/phone.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">
+                                Телефон:   <br>
+                               <strong>
+                                <a href="tel:+ 7 (495) 42-251-31" class="contacts-list__link">+ 7 (495) 42-251-31</a>
+                               </strong>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
         <!-- Модальное окно -->
     <div class="modal" id="modal">
         <div class="modal-overlay" id="overlay"></div>
@@ -435,5 +486,6 @@
     <script src="js/wow.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    
     <script src="js/main.js"></script>
 </html>
