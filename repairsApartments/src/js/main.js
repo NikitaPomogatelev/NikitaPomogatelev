@@ -1,5 +1,5 @@
 $(function(){
-
+    // Скрипт анимации
     new WOW().init();
 
     // Модальное окно
@@ -15,6 +15,7 @@ $('#close').on('click', function(){
     $('#modal').removeClass('modal_active');
 });
 
+        // Кнопка вверх
 let btnUp = $('.button-up');
 
 $(document).on('scroll', function() {
@@ -65,5 +66,44 @@ btnUp.on('click', function() {
         
 
      });
+
+      // Валидация формы
+      $.validator.setDefaults({
+          highlight: function(element) {
+              $(element)
+              .closest('.brif__input')
+              .addClass('has-invalid');
+          },
+          unhighlight: function(element) {
+            $(element)
+            .closest('.brif__input')
+            .removeClass('has-invalid');
+        }
+      });
+      $("#brif-form").validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            username: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+                }
+            },
+            messages: {
+                username: "Укажите ваше имя",
+                phone: "Нам нужен ваш номер телефона",
+                email: "Нам нужен ваш email",
+            }
+
+      });
+
+    //   Маска для телефона
+    $('.phone').mask('+7 (999) 999-99-99');
 
 });
