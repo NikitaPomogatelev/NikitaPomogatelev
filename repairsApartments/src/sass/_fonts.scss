@@ -7,6 +7,7 @@
         url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -19,6 +20,7 @@
         url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @mixin reg {
