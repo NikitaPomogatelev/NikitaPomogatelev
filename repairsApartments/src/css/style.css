@@ -73,10 +73,6 @@ a {
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: #ffdb33;
-}
-
 .section {
   padding: 90px 0;
 }
@@ -101,6 +97,10 @@ a {
   border-radius: 10px;
   font-family: 'Museo Sans Cyrl', sans-serif;
   font-weight: 300;
+}
+
+.input:focus {
+  border: 1px solid #ffd200;
 }
 
 .button-up {
@@ -137,6 +137,12 @@ a {
 
 .invalid {
   color: red;
+}
+
+@media (min-width: 1200px) {
+  .button:hover {
+    background-color: #ffdb33;
+  }
 }
 
 .navbar {
