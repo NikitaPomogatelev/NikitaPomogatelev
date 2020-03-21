@@ -1,0 +1,1 @@
+for(var year=2e3;year<=2030;year++){var d=new Date(year,0,1);0===d.getDay()&&console.log("1 января припадает на Воскресенье в "+year+" году")}
