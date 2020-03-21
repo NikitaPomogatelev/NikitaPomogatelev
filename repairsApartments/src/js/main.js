@@ -16,10 +16,10 @@ $('#close').on('click', function(){
 });
 
         // Кнопка вверх
-let btnUp = $('.button-up');
+var btnUp = $('.button-up');
 
 $(document).on('scroll', function() {
-    let top = $(this).scrollTop();
+    var top = $(this).scrollTop();
 
 if (top > 200) {
     btnUp.fadeIn(500);
@@ -107,5 +107,17 @@ btnUp.on('click', function() {
     //   Маска для телефона
     $('.phone').mask('+7 (999) 999-99-99');
 
+     //   Обработка и отправка формы Через Ajax
+     $('#offer-form').on('submit', function(event) {
+         event.preventDefault();
+         $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function(data) {
+                console.log(data);
+            }
+         });
+     });
   
 });
