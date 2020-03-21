@@ -3,7 +3,7 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2)
     width: 100%
     display: grid
-    grid-template-columns: 1fr 4fr 1.5fr 1fr
+    grid-template-columns: 1fr 4fr 2fr 1fr
     align-items: center
     padding: 20px 1%
     &-button, &-call
@@ -12,10 +12,12 @@
         grid-column: 1/2
         grid-row: 1/2
         justify-self: center
+        padding-right: 30px
         
 
     &-list
         grid-column: 2/3
+        width: 737px
         
         
         &__item
@@ -25,19 +27,20 @@
                 margin-right: 0
         &__link
             color: $text-color
-            font-size: 16px
+            font-size: 18px
             font-weight: 400
     &__contacts
         grid-column: 3/4
         grid-row: 1/2
-        justify-self: center
+        justify-self: end
+        text-align: right
     &__description
         display: block
         font-size: 12px
         color: darken($text-color, 25%)
     &__phone
         color: $text-color
-        font-size: 18px
+        font-size: 22px
         font-weight: 300
     &__lang
         font-size: 18px
@@ -65,7 +68,10 @@
             grid-row: 2/3
             grid-column: 1/4
             margin-top: 20px
-            justify-self: center
+            justify-self: start
+            &__link
+                font-size: 16px
+                
         &__contacts
             grid-column: 3/4
             grid-row: 1/2

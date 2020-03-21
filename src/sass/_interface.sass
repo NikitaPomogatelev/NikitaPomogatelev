@@ -6,7 +6,10 @@ ul
     padding: 0
 
 .container
-    grid-template-columns: 1fr 4fr 1.5fr 1fr
+    display: grid
+    grid-template-columns: 1fr 4fr 2fr 1fr
+    grid-template-rows: repeat(2, auto)
+    align-items: center
 p
     margin: 0
 
@@ -39,6 +42,37 @@ body
     transition: all 0.4s ease
     &:hover
         background: darken($main-color, 3%)
-        
+
+.section
+    &-title
+        display: block
+        margin: 0
+        font-size: 32px
+        line-height: 39px
+        font-weight: 700
+        max-width: 445px
+        position: relative
+        &::after
+            content: ''
+            display: block
+            width: 70px
+            height: 4px
+            background: $main-color
+            margin-top: 20px
+    &-subtitle
+        font-size: 22px
+        font-weight: 400
+        letter-spacing: 150%
+        max-width: 445px
+
+@media (max-width: 1200px)
+    .section
+        &-title
+            font-size: 26px
+
+@media (max-width: 768px)
+    .section
+        &-title
+            font-size: 20px
         
 
